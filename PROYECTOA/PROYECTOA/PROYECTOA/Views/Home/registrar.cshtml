@@ -1,0 +1,135 @@
+﻿@{
+    ViewBag.Title = "Registrar";
+    Layout = "~/Views/Shared/_Layout_Externo.cshtml";
+}
+<style>
+    body {
+        background-image: url('https://blogttimerelogios.files.wordpress.com/2019/04/baselworld-2010-breitling-superocean-ocean.jpg?w=1000');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-label,
+    .form-control,
+    .btn {
+        border-radius: 10px;
+    }
+
+    .nav-pills .nav-link {
+        background-color: #343a40;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+        .nav-pills .nav-link.active {
+            background-color: #004080; 
+        }
+
+    .btn-primary {
+        background-color: #004080; 
+        border: 1px solid #004080; 
+        border-radius: 10px;
+    }
+
+        .btn-primary:hover {
+            background-color: #002633; 
+            border: 1px solid #002633; 
+        }
+
+    .btn-secondary {
+        background-color: #6c757d; 
+        border: 1px solid #6c757d;
+        border-radius: 10px;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268; 
+            border: 1px solid #5a6268; 
+        }
+
+    .custom-form {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    }
+</style>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <!-- Pills navs -->
+            <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-login-tab" data-bs-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-register-tab" data-bs-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
+                </li>
+            </ul>
+            <!-- Pills navs -->
+            <!-- Pills content -->
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Login tab -->
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberCheck">
+                            <label class="form-check-label" for="rememberCheck">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+
+                <!-- Register tab -->
+                <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                    <form>
+                        <!-- Include registration fields here -->
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="registerName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Pills content -->
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Add JavaScript to initialize the tabs -->
+<script>
+    var tab = new bootstrap.Tab(document.getElementById('pills-register-tab'));
+    tab.show();
+</script>

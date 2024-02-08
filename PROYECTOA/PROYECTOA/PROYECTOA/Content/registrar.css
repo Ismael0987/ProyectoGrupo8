@@ -1,0 +1,52 @@
+﻿/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('tu_imagen_de_fondo.jpg') center/cover no-repeat fixed;
+    color: #fff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.nav-pills {
+    background-color: #343a40; /* Color de fondo del menú de píldoras */
+}
+
+.nav-link {
+    color: #fff !important; /* Color del texto del menú de píldoras */
+}
+
+.tab-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente del contenido de las píldoras */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-outline {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: none;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color del botón principal */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Color del botón principal al pasar el ratón */
+    }
+
+/* Otros estilos según tu preferencia */

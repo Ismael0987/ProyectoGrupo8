@@ -1,0 +1,5 @@
+﻿Compilación iniciada a las 20:14...
+1>------ Operación Compilar iniciada: Proyecto: PROYECTOA, configuración: Debug Any CPU ------
+1>  PROYECTOA -> C:\Users\Ismael Jiménez\source\repos\PROYECTOA\PROYECTOA\PROYECTOA\bin\PROYECTOA.dll
+========== Compilación: 1 correcto, 0 erróneo, 0 actualizado, 0 omitido ==========
+========== Compilar completado a las 20:14 y tardó 00,601 segundos ==========

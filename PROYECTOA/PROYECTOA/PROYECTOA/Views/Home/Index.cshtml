@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-white mb-2">Encuentre el RELOJ de sus sueños</h1>
+                    <p class="lead fw-normal text-white-50 mb-4">Los mejores relojes en calidad y precio los encuentra aqui en Relojes Mundiales</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Sobre Nosotros</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#NuevosArticulos">Relojes</a>
+                    </div>
+                </div>
+            </div>           
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="~/Imagenes/IndexHeader.jpg" alt="..." /></div>
+        </div>
+    </div>
+</header>
+
+<div class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-10 col-xl-7">
+                <div class="text-center">
+                    <div class="fs-4 mb-4 fst-italic">« Universo de lujo, elegancia y exclusividad, donde podrás encontrar relojes y joyas de las marcas más importantes del mundo.  »</div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="fw-bold">
+                            Relojes Mundiales
+                            <span class="fw-bold text-primary mx-1">/</span>
+                            Tiendas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="py-5" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Sobre Nosotros</h2></div>
+            <div class="col-lg-8">
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h5">Calidad</h2>
+                        <p class="mb-0">En Relojes Mundiales, gozamos de un equipo de profesionales especialmente calificados en materia de relojes y joyas, para dar consejos y asesoramiento personalizado a quienes acuden a nuestras tienda.</p>
+                    </div>
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <h2 class="h5">Reparacion y Mantenimmiento</h2>
+                        <p class="mb-0">Además, brindamos servicio de taller y mantenimiento a todo tipo de pieza o marca de reloj. Contamos con talleres especializados y relojeros de mucha experiencia y pasión.</p>
+                    </div>
+                    <div class="col mb-5 mb-md-0 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5">Servicio al Cliente</h2>
+                        <p class="mb-0">Sabemos que cada cliente es especial y es por ello que queremos conocer sus necesidades especificas. Conoce más sobre los servicios especializados que brindamos en nuestras tiendas Relojes Mundiales.</p>
+                    </div>
+                    <div class="col h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5">Nuestras Tiendas</h2>
+                        <p class="mb-0">En Relojes Mundiales, le ayudamos a tomar la mejor de las elecciones en sus relojes de las marcas representadas en Relojes Mundiales, privilegiando los valores y la ética que nutren la tradición de la alta relojería, como así también la capacidad de innovación en el diseño e investigación permanente en las complicaciones de los mecanismos. Calidad, tradición y vanguardia constituye nuestra filosofía del servicio ofrecido en nuestras tiendas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="NuevosArticulos">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <div class="text-center">
+                    <h2 class="fw-bolder">Ultimos Articulos</h2>
+                    <p class="lead fw-normal text-muted mb-5">Ofrecemos las mejores colecciones de relojes para satisfacer los gustos de un consumidor exigente, nombres como Hublot, SEIKON, Bulgari, Omega, ROLEX y mucho más podrás encontrar en Relojes Mundiales. ¡Adéntrate en nuestro mundo!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="~/Imagenes/IndexRolex.jpg" alt="..." />
+                    <div class="card-body p-4">                        
+                        <a class="text-decoration-none link-dark stretched-link" href="@Url.Action("Productos","Home")"><h5 class="card-title mb-3">Rolex</h5></a>
+                        <p class="card-text mb-0">Los nuevos modelos Rolex presentados en 2024 hacen patente una voluntad de reinventarse de forma continua, de innovar manteniendo el espíritu de la tradición y de poner la técnica al servicio de la audacia creativa.</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="~/Imagenes/IndexSEIKON.jpg" alt="..." />
+                    <div class="card-body p-4">                       
+                        <a class="text-decoration-none link-dark stretched-link" href="@Url.Action("Productos","Home")"><h5 class="card-title mb-3">Seikon</h5></a>
+                        <p class="card-text mb-0">La gama Prospex se desarrolló pensando en el desafío del aventurero, encontrando nuevos desafíos en el agua, el cielo y la tierra. De hecho, esta es la diferencia que marcan los modelos de esta serie.</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="~/Imagenes/IndexWind.jpg" alt="..." />
+                    <div class="card-body p-4">
+                        <a class="text-decoration-none link-dark stretched-link" href="@Url.Action("Productos","Home")"><h5 class="card-title mb-3">Generic</h5></a>
+                        <p class="card-text mb-0">Diseño único: el anillo y reloj perfectos, muy práctico, al mismo tiempo puede adornar tus manos, fácil de poner y quitar, adecuado para todos los tamaños de dedos, y también un accesorio de moda para tu uso diario.</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+            <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                <div class="mb-4 mb-xl-0">
+                    <div class="fs-3 fw-bold text-white">Nuevos Productos, y ofertas.</div>
+                    <div class="text-white-50">Suscribete para nuestras noticias y ultimas actualizaciones</div>
+                </div>
+                <div class="ms-xl-4">
+                    <div class="input-group mb-2">
+                        <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
+                        <button class="btn btn-outline-light" id="button-newsletter" type="button">Suscribete</button>
+                    </div>
+                    <div class="small text-white-50">Nos preocupamos por la privacidad y nunca compartiremos sus datos.</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+       
